@@ -23,9 +23,6 @@ import recipeApi from "./recipeApi.json"
 function App() {
   return (
     <div>
-      <h2>
-        рецепти
-      </h2>
       <Recipes items={recipeApi} />
     </div>
   )
