@@ -15,16 +15,21 @@
 
 
 //рецепти
-
+import GlobalStyles from "./GlobalStyles";
 import React from "react";
 import Recipes from "./Recipes";
 import recipeApi from "./recipeApi.json"
+import Header from "./Header"
+
+
 
 function App() {
   return (
-    <div>
+    <>
+      <GlobalStyles/>
+      <Header />
       <Recipes items={recipeApi} />
-    </div>
+    </>
   )
 }
 
